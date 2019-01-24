@@ -11,8 +11,9 @@ namespace RPSLS_Game
         // (HAS A)
         //int life;
         //int position;
-        //string gesture;
-       string character;
+     
+        string gamerNameOne;
+        string gamerNameTwo;
         //
         // (SPAWNER default actions)
         public Human()
@@ -20,6 +21,32 @@ namespace RPSLS_Game
         
         }
         // (CAN DO)
-        
+        public override string ChooseGesture()
+        {
+            Console.WriteLine("Select a hand gesture to be ready at will (Choices are 'Rock', 'Paper', 'Scissors', 'Lizard', 'Spock': ");
+            string gesture = Console.ReadLine();
+          if(gesture!= "Rock" || gesture!="Paper" || gesture != "Scissors" || gesture != "Lizard" || gesture != "Spock")
+            {
+                return ChooseGesture();
+            }
+            else
+            {
+                return gesture;
+            }
+        }
+        public override string ChoosePlayerOneName()
+        {
+            Console.WriteLine("What name would you like the game to call you?");
+            gamerNameOne = Console.ReadLine();
+            return gamerNameOne;
+        }
+        public override string ChoosePlayerTwoName()
+        {
+            Console.WriteLine("Now player two.");
+            System.Threading.Thread.Sleep(2000);
+            Console.WriteLine("What name would you like the game to call you?");
+            gamerNameTwo = Console.ReadLine();
+            return gamerNameTwo;
+        }
     }
 }

@@ -1,0 +1,7 @@
+C:\Users\theri\OneDrive\Workflow Almanac\Project Files (Misc)\DevCodeCamp\C#\Projects\RPSLSGame\RPSLS Game\obj\Debug\RPSLS Game.csprojAssemblyReference.cache
+C:\Users\theri\OneDrive\Workflow Almanac\Project Files (Misc)\DevCodeCamp\C#\Projects\RPSLSGame\RPSLS Game\obj\Debug\RPSLS Game.csproj.CoreCompileInputs.cache
+C:\Users\theri\OneDrive\Workflow Almanac\Project Files (Misc)\DevCodeCamp\C#\Projects\RPSLSGame\RPSLS Game\bin\Debug\RPSLS Game.exe.config
+C:\Users\theri\OneDrive\Workflow Almanac\Project Files (Misc)\DevCodeCamp\C#\Projects\RPSLSGame\RPSLS Game\bin\Debug\RPSLS Game.exe
+C:\Users\theri\OneDrive\Workflow Almanac\Project Files (Misc)\DevCodeCamp\C#\Projects\RPSLSGame\RPSLS Game\bin\Debug\RPSLS Game.pdb
+C:\Users\theri\OneDrive\Workflow Almanac\Project Files (Misc)\DevCodeCamp\C#\Projects\RPSLSGame\RPSLS Game\obj\Debug\RPSLS Game.exe
+C:\Users\theri\OneDrive\Workflow Almanac\Project Files (Misc)\DevCodeCamp\C#\Projects\RPSLSGame\RPSLS Game\obj\Debug\RPSLS Game.pdb

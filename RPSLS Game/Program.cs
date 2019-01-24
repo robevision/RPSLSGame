@@ -11,6 +11,9 @@ namespace RPSLS_Game
         static void Main(string[] args)
         {
             Game game = new Game();
+            game.OfferGameRules();
+            game.ChooseGameMode();
+            game.RunGame();
             //player 1 vs player 2
             //player 1 vs AI
             //Round
