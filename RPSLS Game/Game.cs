@@ -39,14 +39,7 @@ namespace RPSLS_Game
         };
         }
         //CAN DO
-        public void EvaluateGestureOne()
-        {
-        
-        }
-        public void EvaluateGestureTwo()
-        {
-
-        }
+   
         public void ChooseGameMode()
         {
             Console.WriteLine("Would you like to play with a frenemy or a computer player? (Type frenemy or computer player): ");
@@ -55,22 +48,36 @@ namespace RPSLS_Game
             if (playerOptionOne.Contains(userInput.ToLower()))
             {
                 playerOne = new Human();
+                Console.WriteLine("Now player two.");
+                System.Threading.Thread.Sleep(2000);
                 playerTwo = new Human();
             }
             else if (playerOptionTwo.Contains(userInput.ToLower()))
             {
                 playerOne = new Human();
-                playerTwo = new AI();
+                playerTwo = new AI("AI-1");
             }
             else if (playerOptionThree.Contains(userInput.ToLower()))
             {
-                playerOne = new AI();
-                playerTwo = new AI();
+                playerOne = new AI("AI-1");
+                Console.WriteLine("A computer is player one.");
+                System.Threading.Thread.Sleep(2000);
+                playerTwo = new AI("AI-2");
+                Console.WriteLine("A computer is player two.");
+                System.Threading.Thread.Sleep(2000);
             }
             else if (playerOptionFour.Contains(userInput.ToLower()))
             {
                 playerOne = new Human();
-                playerTwo = new Sheldon();
+                playerTwo = new Sheldon("Sheldon");
+                Console.WriteLine("Now the computer.");
+                System.Threading.Thread.Sleep(2000);
+                Console.WriteLine("What superior name would you like the game to call you?");
+                System.Threading.Thread.Sleep(3000);
+                Console.WriteLine("S" + "    " + "H" + "    " + "E" + "    " + "L" + "    " + "D" + "    " + "O" + "    " + "N");
+                System.Threading.Thread.Sleep(3000);
+                Console.ReadLine();
+                System.Threading.Thread.Sleep(3000);
             }
             else
             {
@@ -79,18 +86,17 @@ namespace RPSLS_Game
             }
 
         }
+  
         public void RunGame()
         {
-            playerOne.ChoosePlayerOneName();
-            playerTwo.ChoosePlayerTwoName();
             Console.WriteLine("Players will now pick a gesture. Do not peek at each player's submission.");
             System.Threading.Thread.Sleep(1000);
             Console.WriteLine("Player One goes first.");
             playerOne.ChooseGesture();
-            EvaluateGestureOne();
+            playerOne.gesture = "test";
             Console.WriteLine("Now Player Two.");
             playerTwo.ChooseGesture();
-            EvaluateGestureTwo();
+            // playerTwo.gesture;
         }
        public void OfferGameRules()
         {
@@ -127,7 +133,12 @@ namespace RPSLS_Game
             Console.WriteLine("Are you ready?");
             System.Threading.Thread.Sleep(3000);
         }
-                
+        //public void EvaluateGesture()
+        //{
+          
+        //}
+
+
     }
 
 }

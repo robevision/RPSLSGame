@@ -10,6 +10,8 @@ namespace RPSLS_Game
     {
         static void Main(string[] args)
         {
+            MainMenu.DisplayRules();
+
             Game game = new Game();
             game.OfferGameRules();
             game.ChooseGameMode();

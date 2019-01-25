@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace RPSLS_Game
 {
-    class MainMenu
+    static class MainMenu
     {
-
+        public static void DisplayRules()
+        {
+            Console.WriteLine("These are the rules.");
+        }
     }
 }
