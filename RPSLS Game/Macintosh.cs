@@ -10,6 +10,14 @@ namespace RPSLS_Game
     {
         // (HAS A)
         // (SPAWNER)
+        public Macintosh()
+        {
+
+        }
         // (CAN DO)
+        public override void ChooseGesture()
+        {
+
+        }
     }
 }

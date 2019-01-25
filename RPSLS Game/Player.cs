@@ -10,8 +10,9 @@ namespace RPSLS_Game
     {
         // (HAS A)
         public int score;
-        public string gesture;
+        public string [] gestures;
         public string playerName;
+        public string gestureDecision;
 
         // (SPAWNER)
         public Player()

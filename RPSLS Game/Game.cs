@@ -12,15 +12,18 @@ namespace RPSLS_Game
         Player playerOne;
         Player playerTwo;
         string gameMode;
-        private object playerOption;
         string[] playerOptionOne;
         string[] playerOptionTwo;
         string[] playerOptionThree;
         string[] playerOptionFour;
+        string gestureOptionOne;
+        string gestureOptionTwo;
+        int round;
 
         //SPAWNER
         public Game()
         {
+            round = 0;
             playerOptionOne = new string[2]
             {
                 "frenemy", "pvp"
@@ -76,8 +79,6 @@ namespace RPSLS_Game
                 System.Threading.Thread.Sleep(3000);
                 Console.WriteLine("S" + "    " + "H" + "    " + "E" + "    " + "L" + "    " + "D" + "    " + "O" + "    " + "N");
                 System.Threading.Thread.Sleep(3000);
-                Console.ReadLine();
-                System.Threading.Thread.Sleep(3000);
             }
             else
             {
@@ -86,19 +87,50 @@ namespace RPSLS_Game
             }
 
         }
-  
+
+        public void EvaluateGesture()
+        {
+           
+            Console.WriteLine(gestureOptionOne);
+            Console.WriteLine(gestureOptionTwo);
+            System.Threading.Thread.Sleep(1000);
+            do
+            {
+                Console.WriteLine("You both chose the same gesture. DRAW. Go again.");
+                round++;
+                System.Threading.Thread.Sleep(1000);
+                MainMenu.StartSecondGesturePrompt(playerOne, playerTwo);
+            }
+            while (gestureOptionOne == gestureOptionTwo);
+            if(gestureOptionOne == "rock" && gestureOptionTwo == "scissors" || gestureOptionTwo == "lizard")
+            {
+
+            }
+            else if(gestureOptionOne == "spock" && gestureOptionTwo == "scissors" || gestureOptionTwo == "rock")
+            {
+
+            }
+            else if(gestureOptionOne == "scissors" && gestureOptionTwo == "lizard" || gestureOptionTwo == "paper")
+            {
+
+            }
+            else if(gestureOptionOne == "lizard" && gestureOptionTwo == "paper" || gestureOptionTwo == "spock")
+            {
+
+            }
+            else if(gestureOptionOne == "paper" && gestureOptionTwo == "spock" || gestureOptionTwo == "rock")
+            {
+
+            }
+        }
         public void RunGame()
         {
-            Console.WriteLine("Players will now pick a gesture. Do not peek at each player's submission.");
-            System.Threading.Thread.Sleep(1000);
-            Console.WriteLine("Player One goes first.");
-            playerOne.ChooseGesture();
-            playerOne.gesture = "test";
-            Console.WriteLine("Now Player Two.");
-            playerTwo.ChooseGesture();
-            // playerTwo.gesture;
+        MainMenu.StartFirstGesturePrompt();
+        MainMenu.StartSecondGesturePrompt(playerOne, playerTwo);
+        EvaluateGesture();
         }
-       public void OfferGameRules()
+
+        public void OfferGameRules()
         {
             Console.WriteLine("Welcome to the 'Rock, Paper, Scissors, Lizard, Spock Game'");
             System.Threading.Thread.Sleep(3000);
@@ -133,10 +165,7 @@ namespace RPSLS_Game
             Console.WriteLine("Are you ready?");
             System.Threading.Thread.Sleep(3000);
         }
-        //public void EvaluateGesture()
-        //{
-          
-        //}
+      
 
 
     }

@@ -12,20 +12,24 @@ namespace RPSLS_Game
         //int life;
         //int position;
 
-
         //
         // (SPAWNER default actions)
         public Human()
         {
             ChoosePlayerName();
+            gestures = new string[5]
+            {
+                "rock", "paper","scissors","lizard","spock"
+            };
         }
         // (CAN DO)
         public override void ChooseGesture()
         {
             Console.WriteLine("Select a hand gesture to be ready at will (Choices are 'Rock', 'Paper', 'Scissors', 'Lizard', 'Spock': ");
-            string gesture = Console.ReadLine();
-            if (gesture != "Rock" || gesture != "Paper" || gesture != "Scissors" || gesture != "Lizard" || gesture != "Spock")
+            gestureDecision = Console.ReadLine().ToLower();
+            if (!gestures.Contains(gestureDecision))
             {
+                Console.WriteLine("You need to type one of the choices.");
                 ChooseGesture();
             }
         }

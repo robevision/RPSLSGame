@@ -9,9 +9,9 @@ namespace RPSLS_Game
     class AI : Player
     {
         // (HAS A)
-        string name;
+        string playerName;
         // (SPAWNER)
-        public AI(string name)
+        public AI(string playerName)
         {
          
         }

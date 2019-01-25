@@ -9,9 +9,9 @@ namespace RPSLS_Game
     class Sheldon : Player
     {
         //HAS A
-        string name;
+        string playerName;
         //SPAWNER
-        public Sheldon(string name)
+        public Sheldon(string playerName)
         {
 
         }
@@ -19,7 +19,7 @@ namespace RPSLS_Game
         public override void ChooseGesture()
         {
             Console.WriteLine("Sheldon selects a gesture.");
-            gesture = "Spock";
+            gestureDecision = "spock";
         }
     }
 }
