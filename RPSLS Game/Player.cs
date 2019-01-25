@@ -17,10 +17,11 @@ namespace RPSLS_Game
         // (SPAWNER)
         public Player()
         {
-
+          score = 0;
         }
         // (CAN DO)
         public abstract void ChooseGesture();
+        public abstract void PlayerScore();
       
     }
 }

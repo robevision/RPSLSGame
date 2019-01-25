@@ -13,13 +13,17 @@ namespace RPSLS_Game
         //SPAWNER
         public Sheldon(string playerName)
         {
-
+            score = 0;
         }
         //CAN DO
         public override void ChooseGesture()
         {
             Console.WriteLine("Sheldon selects a gesture.");
             gestureDecision = "spock";
+        }
+        public override void PlayerScore()
+        {
+            
         }
     }
 }

@@ -14,11 +14,6 @@ namespace RPSLS_Game
             game.OfferGameRules();
             game.ChooseGameMode();
             game.RunGame();
-            //player 1 vs player 2
-            //player 1 vs AI
-            //Round
-            //Console.WriteLine("Choose a gesture.");
-            //Gesture
             //Decision
             //Console.WriteLine("You won the game!");
             //Console.WriteLine("You lost the game.Try Again!");

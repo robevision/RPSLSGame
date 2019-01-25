@@ -13,8 +13,10 @@ namespace RPSLS_Game
             Console.WriteLine("Players will now pick a gesture. Do not peek at each player's submission.");
             System.Threading.Thread.Sleep(1000);
         }
-        public static void StartSecondGesturePrompt(Player player1, Player player2)
+        public static void StartSecondGesturePrompt(Player player1, Player player2,int round)
         {
+            Console.WriteLine("ROUND " + round);
+            System.Threading.Thread.Sleep(3000);
             Console.WriteLine(player1.playerName + " goes first.");
             player1.ChooseGesture();
             Console.WriteLine("Now " + player2.playerName);

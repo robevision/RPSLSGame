@@ -12,10 +12,14 @@ namespace RPSLS_Game
         // (SPAWNER)
         public Macintosh()
         {
-
+         score = 0;
         }
         // (CAN DO)
         public override void ChooseGesture()
+        {
+
+        }
+        public override void PlayerScore()
         {
 
         }

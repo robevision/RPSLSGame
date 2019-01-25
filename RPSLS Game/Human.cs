@@ -17,6 +17,7 @@ namespace RPSLS_Game
         public Human()
         {
             ChoosePlayerName();
+            score = 0;
             gestures = new string[5]
             {
                 "rock", "paper","scissors","lizard","spock"
@@ -37,6 +38,10 @@ namespace RPSLS_Game
         {
             Console.WriteLine("What name would you like the game to call you?");
             playerName = Console.ReadLine();
+
+        }
+        public override void PlayerScore()
+        {
 
         }
     }

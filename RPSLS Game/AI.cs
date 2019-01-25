@@ -13,12 +13,16 @@ namespace RPSLS_Game
         // (SPAWNER)
         public AI(string playerName)
         {
-         
+        score = 0;
         }
         // (CAN DO)
         public override void ChooseGesture()
         {
             //Random
+        }
+        public override void PlayerScore()
+        {
+
         }
     }
     
