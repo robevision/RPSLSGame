@@ -9,10 +9,7 @@ namespace RPSLS_Game
     class Human : Player
     {
         // (HAS A)
-        //int life;
-        //int position;
-
-        //
+      
         // (SPAWNER default actions)
         public Human()
         {

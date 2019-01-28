@@ -71,7 +71,8 @@ namespace RPSLS_Game
             else if (playerOptionFour.Contains(userInput.ToLower()))
             {
                 playerOne = new Human();
-                playerTwo = new Sheldon("Sheldon");
+                playerTwo = new Sheldon();
+                playerTwo.playerName = "Sheldon";
                 Console.WriteLine("Now the computer.");
                 System.Threading.Thread.Sleep(2000);
                 Console.WriteLine("What superior name would you like the game to call you?");
