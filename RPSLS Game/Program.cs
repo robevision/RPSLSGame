@@ -13,6 +13,7 @@ namespace RPSLS_Game
             Game game = new Game();
             game.OfferGameRules();
             game.ChooseGameMode();
+            game.StartGamePrompts();
             game.RunGame();
             //Decision
             //Console.WriteLine("You won the game!");

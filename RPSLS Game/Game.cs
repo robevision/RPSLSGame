@@ -19,10 +19,12 @@ namespace RPSLS_Game
         string gestureOptionOne;
         string gestureOptionTwo;
         int round;
+        public bool result;
 
         //SPAWNER
         public Game()
         {
+           
             round = 1;
             playerOptionOne = new string[2]
             {
@@ -91,12 +93,14 @@ namespace RPSLS_Game
         public void EvaluateGesture()
         {
            
-            Console.WriteLine(playerOne.gestureDecision);
-            System.Threading.Thread.Sleep(1000);
-            Console.WriteLine(playerTwo.gestureDecision);
-            System.Threading.Thread.Sleep(1000);
+          
             if (playerOne.gestureDecision == playerTwo.gestureDecision)
             {
+                Console.WriteLine(playerOne.gestureDecision);
+                System.Threading.Thread.Sleep(1000);
+                Console.WriteLine(playerTwo.gestureDecision);
+                System.Threading.Thread.Sleep(1000);
+
                 Console.WriteLine("You both chose the same gesture. DRAW. Go again.");
                 round++;
                 System.Threading.Thread.Sleep(1000);
@@ -104,6 +108,10 @@ namespace RPSLS_Game
             }
             if (playerOne.gestureDecision == "rock" && playerTwo.gestureDecision == "scissors" || playerOne.gestureDecision == "rock" && playerTwo.gestureDecision == "lizard")
             {
+                Console.WriteLine(playerOne.gestureDecision);
+                System.Threading.Thread.Sleep(1000);
+                Console.WriteLine(playerTwo.gestureDecision);
+                System.Threading.Thread.Sleep(1000);
                 round++;
                 Console.WriteLine(playerOne.playerName + " wins round!");
                 System.Threading.Thread.Sleep(1000);
@@ -112,6 +120,10 @@ namespace RPSLS_Game
             }
             if(playerOne.gestureDecision == "spock" && playerTwo.gestureDecision == "scissors" || playerOne.gestureDecision == "spock" && playerTwo.gestureDecision == "rock")
             {
+                Console.WriteLine(playerOne.gestureDecision);
+                System.Threading.Thread.Sleep(1000);
+                Console.WriteLine(playerTwo.gestureDecision);
+                System.Threading.Thread.Sleep(1000);
                 round++;
                 Console.WriteLine(playerOne.playerName + " wins round!");
                 System.Threading.Thread.Sleep(1000);
@@ -120,6 +132,10 @@ namespace RPSLS_Game
             }
             if(playerOne.gestureDecision == "scissors" && playerTwo.gestureDecision == "lizard" || playerOne.gestureDecision == "scissors" && playerTwo.gestureDecision == "paper")
             {
+                Console.WriteLine(playerOne.gestureDecision);
+                System.Threading.Thread.Sleep(1000);
+                Console.WriteLine(playerTwo.gestureDecision);
+                System.Threading.Thread.Sleep(1000);
                 round++;
                 Console.WriteLine(playerOne.playerName + " wins round!");
                 System.Threading.Thread.Sleep(1000);
@@ -128,6 +144,10 @@ namespace RPSLS_Game
             }
             if(playerOne.gestureDecision == "lizard" && playerTwo.gestureDecision == "paper" || playerOne.gestureDecision == "lizard" && playerTwo.gestureDecision == "spock")
             {
+                Console.WriteLine(playerOne.gestureDecision);
+                System.Threading.Thread.Sleep(1000);
+                Console.WriteLine(playerTwo.gestureDecision);
+                System.Threading.Thread.Sleep(1000);
                 round++;
                 Console.WriteLine(playerOne.playerName + " wins round!");
                 System.Threading.Thread.Sleep(1000);
@@ -136,6 +156,10 @@ namespace RPSLS_Game
             }
             if(playerOne.gestureDecision == "paper" && playerTwo.gestureDecision == "spock" || playerOne.gestureDecision == "paper" && playerTwo.gestureDecision == "rock")
             {
+                Console.WriteLine(playerOne.gestureDecision);
+                System.Threading.Thread.Sleep(1000);
+                Console.WriteLine(playerTwo.gestureDecision);
+                System.Threading.Thread.Sleep(1000);
                 round++;
                 Console.WriteLine(playerOne.playerName + " wins round!");
                 System.Threading.Thread.Sleep(1000);
@@ -144,6 +168,10 @@ namespace RPSLS_Game
             }
             if (playerTwo.gestureDecision == "rock" && playerOne.gestureDecision == "scissors" || playerTwo.gestureDecision == "rock" && playerOne.gestureDecision == "lizard")
             {
+                Console.WriteLine(playerOne.gestureDecision);
+                System.Threading.Thread.Sleep(1000);
+                Console.WriteLine(playerTwo.gestureDecision);
+                System.Threading.Thread.Sleep(1000);
                 round++;
                 Console.WriteLine(playerTwo.playerName + " wins round!");
                 System.Threading.Thread.Sleep(1000);
@@ -152,6 +180,10 @@ namespace RPSLS_Game
             }
             if (playerTwo.gestureDecision == "spock" && playerOne.gestureDecision == "scissors" || playerTwo.gestureDecision == "spock" && playerOne.gestureDecision == "rock")
             {
+                Console.WriteLine(playerOne.gestureDecision);
+                System.Threading.Thread.Sleep(1000);
+                Console.WriteLine(playerTwo.gestureDecision);
+                System.Threading.Thread.Sleep(1000);
                 round++;
                 Console.WriteLine(playerTwo.playerName + " wins round!");
                 System.Threading.Thread.Sleep(1000);
@@ -160,6 +192,10 @@ namespace RPSLS_Game
             }
             if (playerTwo.gestureDecision == "scissors" && playerOne.gestureDecision == "lizard" || playerTwo.gestureDecision == "scissors" && playerOne.gestureDecision == "paper")
             {
+                Console.WriteLine(playerOne.gestureDecision);
+                System.Threading.Thread.Sleep(1000);
+                Console.WriteLine(playerTwo.gestureDecision);
+                System.Threading.Thread.Sleep(1000);
                 round++;
                 Console.WriteLine(playerTwo.playerName + " wins round!");
                 System.Threading.Thread.Sleep(1000);
@@ -168,6 +204,10 @@ namespace RPSLS_Game
             }
             if (playerTwo.gestureDecision == "lizard" && playerOne.gestureDecision == "paper" || playerTwo.gestureDecision == "lizard" && playerOne.gestureDecision == "spock")
             {
+                Console.WriteLine(playerOne.gestureDecision);
+                System.Threading.Thread.Sleep(1000);
+                Console.WriteLine(playerTwo.gestureDecision);
+                System.Threading.Thread.Sleep(1000);
                 round++;
                 Console.WriteLine(playerTwo.playerName + " wins round!");
                 System.Threading.Thread.Sleep(1000);
@@ -176,6 +216,10 @@ namespace RPSLS_Game
             }
             if (playerTwo.gestureDecision == "paper" && playerOne.gestureDecision == "spock" || playerTwo.gestureDecision == "paper" && playerOne.gestureDecision == "rock")
             {
+                Console.WriteLine(playerOne.gestureDecision);
+                System.Threading.Thread.Sleep(1000);
+                Console.WriteLine(playerTwo.gestureDecision);
+                System.Threading.Thread.Sleep(1000);
                 round++;
                 Console.WriteLine(playerTwo.playerName + " wins round!");
                 System.Threading.Thread.Sleep(1000);
@@ -186,33 +230,38 @@ namespace RPSLS_Game
         public void CompareScores()
         {
 
-            if (playerOne.score > playerTwo.score + 1)
+            if (playerOne.score > (playerTwo.score + 1))
             {
                 Console.WriteLine(playerOne.playerName + " just won the game!!!");
-                //true;
+                bool result = true;
+                RunGame();
             }
-            else if (playerTwo.score > playerOne.score + 1)
+            else if (playerTwo.score > (playerOne.score + 1))
             {
                 Console.WriteLine(playerOne.playerName + " just won the game!!!");
-                //true;
+               bool result = true;
+                RunGame();
             }
             else
             {
-                //false;
+              bool result = false;
                 MainMenu.StartSecondGesturePrompt(playerOne, playerTwo, round);
             }
-            //false;
+        }
+        public void StartGamePrompts()
+        {
+        MainMenu.StartFirstGesturePrompt();
+        MainMenu.StartSecondGesturePrompt(playerOne, playerTwo, round);
         }
         public void RunGame()
         {
-        MainMenu.StartFirstGesturePrompt();
-        MainMenu.StartSecondGesturePrompt(playerOne, playerTwo,round);
-            //do
-            //{
+            while (result==false || result == null)
+            {
+            
                 EvaluateGesture();
-            //}
-            //while (CompareScores(false));
-          
+                
+            }
+
         }
 
         public void OfferGameRules()
