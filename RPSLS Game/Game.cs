@@ -11,13 +11,10 @@ namespace RPSLS_Game
         //HAS
         Player playerOne;
         Player playerTwo;
-        string gameMode;
         string[] playerOptionOne;
         string[] playerOptionTwo;
         string[] playerOptionThree;
         string[] playerOptionFour;
-        string gestureOptionOne;
-        string gestureOptionTwo;
         int round;
         public bool result;
 
@@ -233,18 +230,20 @@ namespace RPSLS_Game
             if (playerOne.score > (playerTwo.score + 1))
             {
                 Console.WriteLine(playerOne.playerName + " just won the game!!!");
-                bool result = true;
+                System.Threading.Thread.Sleep(1000);
+                result = true;
                 RunGame();
             }
             else if (playerTwo.score > (playerOne.score + 1))
             {
-                Console.WriteLine(playerOne.playerName + " just won the game!!!");
-               bool result = true;
+                Console.WriteLine(playerTwo.playerName + " just won the game!!!");
+                System.Threading.Thread.Sleep(1000);
+                result = true;
                 RunGame();
             }
             else
             {
-              bool result = false;
+              result = false;
                 MainMenu.StartSecondGesturePrompt(playerOne, playerTwo, round);
             }
         }
