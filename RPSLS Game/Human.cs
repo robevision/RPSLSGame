@@ -15,14 +15,15 @@ namespace RPSLS_Game
         {
             ChoosePlayerName();
             score = 0;
-            gestures = new string[5]
-            {
-                "rock", "paper","scissors","lizard","spock"
-            };
+           
         }
         // (CAN DO)
         public override void ChooseGesture()
         {
+            List<string> gestures = new List<string>()
+        {
+            "rock","paper","scissors","lizard","spock"
+        };
             Console.WriteLine("Select a hand gesture to be ready at will (Choices are 'Rock', 'Paper', 'Scissors', 'Lizard', 'Spock': ");
             gestureDecision = Console.ReadLine().ToLower();
             if (!gestures.Contains(gestureDecision))

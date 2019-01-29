@@ -35,7 +35,7 @@ namespace RPSLS_Game
             }
             else
             {
-                return;
+                Environment.Exit(0);
             }
         }
         //public static void CallPlayerPrompt()
