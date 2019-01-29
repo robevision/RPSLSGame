@@ -21,10 +21,7 @@ namespace RPSLS_Game
         // (CAN DO)
         public override void ChooseGesture()
         {
-            List<string> gestures = new List<string>()
-        {
-            "rock","paper","scissors","lizard","spock"
-        };
+        
             gestureDecision = gestures[new Random().Next(0, 5)];
             System.Threading.Thread.Sleep(1000);
         }

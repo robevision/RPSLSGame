@@ -10,8 +10,11 @@ namespace RPSLS_Game
     {
         // (HAS A)
         public int score;
-        public string [] gestures;
-        public string playerName;
+        public List<string> gestures = new List<string>()
+        {
+            "rock","paper","scissors","lizard","spock"
+        };
+    public string playerName;
         public string gestureDecision;
 
         // (SPAWNER)

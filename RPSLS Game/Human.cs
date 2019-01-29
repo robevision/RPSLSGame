@@ -20,10 +20,7 @@ namespace RPSLS_Game
         // (CAN DO)
         public override void ChooseGesture()
         {
-            List<string> gestures = new List<string>()
-        {
-            "rock","paper","scissors","lizard","spock"
-        };
+            
             Console.WriteLine("Select a hand gesture to be ready at will (Choices are 'Rock', 'Paper', 'Scissors', 'Lizard', 'Spock': ");
             gestureDecision = Console.ReadLine().ToLower();
             if (!gestures.Contains(gestureDecision))
