@@ -24,6 +24,7 @@ namespace RPSLS_Game
         public override void ChooseGesture()
         {
             gestureDecision=gestures[new Random().Next(0, gestures.Length)];
+            System.Threading.Thread.Sleep(1000);
         }
         public override void PlayerScore()
         {

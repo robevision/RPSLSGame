@@ -23,9 +23,9 @@ namespace RPSLS_Game
         {
            
             round = 1;
-            playerOptionOne = new string[2]
+            playerOptionOne = new string[4]
             {
-                "frenemy", "pvp"
+                "frenemy", "pvp", "human", "hvh"
             };
             playerOptionTwo = new string[8]
            {
@@ -97,6 +97,18 @@ namespace RPSLS_Game
           
             if (playerOne.gestureDecision == playerTwo.gestureDecision)
             {
+                Console.WriteLine("ROCK");
+                Console.WriteLine("PAPER");
+                Console.WriteLine("SCISSORS");
+                Console.WriteLine("LIZARD");
+                Console.WriteLine("SPOCK");
+                System.Threading.Thread.Sleep(150);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(300);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(150);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(150);
                 Console.WriteLine(playerOne.gestureDecision.ToUpper());
                 System.Threading.Thread.Sleep(1000);
                 Console.WriteLine(playerTwo.gestureDecision.ToUpper());
@@ -109,6 +121,18 @@ namespace RPSLS_Game
             }
             if (playerOne.gestureDecision == "rock" && playerTwo.gestureDecision == "scissors" || playerOne.gestureDecision == "rock" && playerTwo.gestureDecision == "lizard")
             {
+                Console.WriteLine("ROCK");
+                Console.WriteLine("PAPER");
+                Console.WriteLine("SCISSORS");
+                Console.WriteLine("LIZARD");
+                Console.WriteLine("SPOCK");
+                System.Threading.Thread.Sleep(150);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(300);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(150);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(150);
                 Console.WriteLine(playerOne.gestureDecision.ToUpper());
                 System.Threading.Thread.Sleep(1000);
                 Console.WriteLine(playerTwo.gestureDecision.ToUpper());
@@ -121,6 +145,18 @@ namespace RPSLS_Game
             }
             if(playerOne.gestureDecision == "spock" && playerTwo.gestureDecision == "scissors" || playerOne.gestureDecision == "spock" && playerTwo.gestureDecision == "rock")
             {
+                Console.WriteLine("ROCK");
+                Console.WriteLine("PAPER");
+                Console.WriteLine("SCISSORS");
+                Console.WriteLine("LIZARD");
+                Console.WriteLine("SPOCK");
+                System.Threading.Thread.Sleep(150);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(300);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(150);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(150);
                 Console.WriteLine(playerOne.gestureDecision.ToUpper());
                 System.Threading.Thread.Sleep(1000);
                 Console.WriteLine(playerTwo.gestureDecision.ToUpper());
@@ -133,6 +169,18 @@ namespace RPSLS_Game
             }
             if(playerOne.gestureDecision == "scissors" && playerTwo.gestureDecision == "lizard" || playerOne.gestureDecision == "scissors" && playerTwo.gestureDecision == "paper")
             {
+                Console.WriteLine("ROCK");
+                Console.WriteLine("PAPER");
+                Console.WriteLine("SCISSORS");
+                Console.WriteLine("LIZARD");
+                Console.WriteLine("SPOCK");
+                System.Threading.Thread.Sleep(150);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(300);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(150);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(150);
                 Console.WriteLine(playerOne.gestureDecision.ToUpper());
                 System.Threading.Thread.Sleep(1000);
                 Console.WriteLine(playerTwo.gestureDecision.ToUpper());
@@ -145,6 +193,18 @@ namespace RPSLS_Game
             }
             if(playerOne.gestureDecision == "lizard" && playerTwo.gestureDecision == "paper" || playerOne.gestureDecision == "lizard" && playerTwo.gestureDecision == "spock")
             {
+                Console.WriteLine("ROCK");
+                Console.WriteLine("PAPER");
+                Console.WriteLine("SCISSORS");
+                Console.WriteLine("LIZARD");
+                Console.WriteLine("SPOCK");
+                System.Threading.Thread.Sleep(150);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(300);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(150);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(150);
                 Console.WriteLine(playerOne.gestureDecision.ToUpper());
                 System.Threading.Thread.Sleep(1000);
                 Console.WriteLine(playerTwo.gestureDecision.ToUpper());
@@ -157,6 +217,18 @@ namespace RPSLS_Game
             }
             if(playerOne.gestureDecision == "paper" && playerTwo.gestureDecision == "spock" || playerOne.gestureDecision == "paper" && playerTwo.gestureDecision == "rock")
             {
+                Console.WriteLine("ROCK");
+                Console.WriteLine("PAPER");
+                Console.WriteLine("SCISSORS");
+                Console.WriteLine("LIZARD");
+                Console.WriteLine("SPOCK");
+                System.Threading.Thread.Sleep(150);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(300);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(150);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(150);
                 Console.WriteLine(playerOne.gestureDecision.ToUpper());
                 System.Threading.Thread.Sleep(1000);
                 Console.WriteLine(playerTwo.gestureDecision.ToUpper());
@@ -169,6 +241,18 @@ namespace RPSLS_Game
             }
             if (playerTwo.gestureDecision == "rock" && playerOne.gestureDecision == "scissors" || playerTwo.gestureDecision == "rock" && playerOne.gestureDecision == "lizard")
             {
+                Console.WriteLine("ROCK");
+                Console.WriteLine("PAPER");
+                Console.WriteLine("SCISSORS");
+                Console.WriteLine("LIZARD");
+                Console.WriteLine("SPOCK");
+                System.Threading.Thread.Sleep(150);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(300);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(150);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(150);
                 Console.WriteLine(playerOne.gestureDecision.ToUpper());
                 System.Threading.Thread.Sleep(1000);
                 Console.WriteLine(playerTwo.gestureDecision.ToUpper());
@@ -181,6 +265,18 @@ namespace RPSLS_Game
             }
             if (playerTwo.gestureDecision == "spock" && playerOne.gestureDecision == "scissors" || playerTwo.gestureDecision == "spock" && playerOne.gestureDecision == "rock")
             {
+                Console.WriteLine("ROCK");
+                Console.WriteLine("PAPER");
+                Console.WriteLine("SCISSORS");
+                Console.WriteLine("LIZARD");
+                Console.WriteLine("SPOCK");
+                System.Threading.Thread.Sleep(150);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(300);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(150);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(150);
                 Console.WriteLine(playerOne.gestureDecision.ToUpper());
                 System.Threading.Thread.Sleep(1000);
                 Console.WriteLine(playerTwo.gestureDecision.ToUpper());
@@ -193,6 +289,18 @@ namespace RPSLS_Game
             }
             if (playerTwo.gestureDecision == "scissors" && playerOne.gestureDecision == "lizard" || playerTwo.gestureDecision == "scissors" && playerOne.gestureDecision == "paper")
             {
+                Console.WriteLine("ROCK");
+                Console.WriteLine("PAPER");
+                Console.WriteLine("SCISSORS");
+                Console.WriteLine("LIZARD");
+                Console.WriteLine("SPOCK");
+                System.Threading.Thread.Sleep(150);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(300);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(150);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(150);
                 Console.WriteLine(playerOne.gestureDecision.ToUpper());
                 System.Threading.Thread.Sleep(1000);
                 Console.WriteLine(playerTwo.gestureDecision.ToUpper());
@@ -205,6 +313,18 @@ namespace RPSLS_Game
             }
             if (playerTwo.gestureDecision == "lizard" && playerOne.gestureDecision == "paper" || playerTwo.gestureDecision == "lizard" && playerOne.gestureDecision == "spock")
             {
+                Console.WriteLine("ROCK");
+                Console.WriteLine("PAPER");
+                Console.WriteLine("SCISSORS");
+                Console.WriteLine("LIZARD");
+                Console.WriteLine("SPOCK");
+                System.Threading.Thread.Sleep(150);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(300);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(150);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(150);
                 Console.WriteLine(playerOne.gestureDecision.ToUpper());
                 System.Threading.Thread.Sleep(1000);
                 Console.WriteLine(playerTwo.gestureDecision.ToUpper());
@@ -217,6 +337,18 @@ namespace RPSLS_Game
             }
             if (playerTwo.gestureDecision == "paper" && playerOne.gestureDecision == "spock" || playerTwo.gestureDecision == "paper" && playerOne.gestureDecision == "rock")
             {
+                Console.WriteLine("ROCK");
+                Console.WriteLine("PAPER");
+                Console.WriteLine("SCISSORS");
+                Console.WriteLine("LIZARD");
+                Console.WriteLine("SPOCK");
+                System.Threading.Thread.Sleep(150);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(300);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(150);
+                Console.WriteLine(".");
+                System.Threading.Thread.Sleep(150);
                 Console.WriteLine(playerOne.gestureDecision.ToUpper());
                 System.Threading.Thread.Sleep(1000);
                 Console.WriteLine(playerTwo.gestureDecision.ToUpper());

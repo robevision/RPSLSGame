@@ -26,7 +26,7 @@ namespace RPSLS_Game
         {
             Console.WriteLine("Would you like to play again? (Type Yes or No): ");
             string restart = Console.ReadLine().ToLower();
-            if (restart == "yes" || restart == "Y")
+            if (restart == "yes" || restart == "y")
             {
                 Game game = new Game();
                 game.ChooseGameMode();
@@ -35,7 +35,7 @@ namespace RPSLS_Game
             }
             else
             {
-
+                return;
             }
         }
         //public static void CallPlayerPrompt()
