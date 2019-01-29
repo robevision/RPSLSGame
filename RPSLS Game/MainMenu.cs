@@ -22,6 +22,22 @@ namespace RPSLS_Game
             Console.WriteLine("Now " + player2.playerName);
             player2.ChooseGesture();
         }
+        public static void RestartGamePrompt()
+        {
+            Console.WriteLine("Would you like to play again? (Type Yes or No): ");
+            string restart = Console.ReadLine().ToLower();
+            if (restart == "yes" || restart == "Y")
+            {
+                Game game = new Game();
+                game.ChooseGameMode();
+                game.StartGamePrompts();
+                game.RunGame();
+            }
+            else
+            {
+
+            }
+        }
         //public static void CallPlayerPrompt()
         //{
         //    playerName;

@@ -15,6 +15,8 @@ namespace RPSLS_Game
             game.ChooseGameMode();
             game.StartGamePrompts();
             game.RunGame();
+            
+ 
             //Decision
             //Console.WriteLine("You won the game!");
             //Console.WriteLine("You lost the game.Try Again!");

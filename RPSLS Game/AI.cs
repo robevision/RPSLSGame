@@ -14,11 +14,16 @@ namespace RPSLS_Game
         public AI(string playerName)
         {
         score = 0;
+            gestures = new string[5]
+           {
+                "rock", "paper","scissors","lizard","spock"
+           };
+
         }
         // (CAN DO)
         public override void ChooseGesture()
         {
-            //Random
+            gestureDecision=gestures[new Random().Next(0, gestures.Length)];
         }
         public override void PlayerScore()
         {
