@@ -38,12 +38,6 @@ namespace RPSLS_Game
                 Environment.Exit(0);
             }
         }
-        //public static void CallPlayerPrompt()
-        //{
-        //    playerName;
-        //    playerOne.playerName = playerName;
-            
-        //    Console.WriteLine(playerName + "goes first.");
-        //}
+     
     }
 }

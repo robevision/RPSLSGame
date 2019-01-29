@@ -14,7 +14,7 @@ namespace RPSLS_Game
         {
             "rock","paper","scissors","lizard","spock"
         };
-    public string playerName;
+        public string playerName;
         public string gestureDecision;
 
         // (SPAWNER)

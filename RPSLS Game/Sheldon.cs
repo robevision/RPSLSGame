@@ -9,13 +9,12 @@ namespace RPSLS_Game
     class Sheldon : Player
     {
         //HAS A
-        string playerName;
+        
         //SPAWNER
         public Sheldon()
         {
             ChoosePlayerName();
             score = 0;
-            playerName = "Sheldon";
         }
         //CAN DO
         public override void ChooseGesture()

@@ -57,16 +57,16 @@ namespace RPSLS_Game
             else if (playerOptionTwo.Contains(userInput.ToLower()))
             {
                 playerOne = new Human();
-                playerTwo = new AI("AI-1");
+                playerTwo = new AI();
                 playerTwo.playerName = "AI-1";
             }
             else if (playerOptionThree.Contains(userInput.ToLower()))
             {
-                playerOne = new AI("AI-1");
+                playerOne = new AI();
                 playerOne.playerName = "AI-1";
                 Console.WriteLine("A computer is player one.");
                 System.Threading.Thread.Sleep(2000);
-                playerTwo = new AI("AI-2");
+                playerTwo = new AI();
                 playerTwo.playerName = "AI-2";
                 Console.WriteLine("A computer is player two.");
                 System.Threading.Thread.Sleep(2000);
@@ -390,7 +390,7 @@ namespace RPSLS_Game
         }
         public void RunGame()
         {
-            while (result==false || result == null)
+            while (result==false)
             {
             
                 EvaluateGesture();
